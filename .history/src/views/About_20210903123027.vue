@@ -26,7 +26,11 @@
     <div class="container">
       <div class="container__left">
         <draggable class="container__left__drag">
-          <div class="container__left__drag__item" v-for="(list1Item, index) in list1" :key="index">
+          <div
+            class="container__left__drag__item"
+            v-for="(list1Item, index) in list1"
+            :key="index"
+          >
             {{ list1Item.name }}
           </div>
         </draggable>
@@ -37,29 +41,29 @@
 </template>
 
 <script>
-import draggable from 'vuedraggable'
+import draggable from "vuedraggable";
 export default {
   data() {
     return {
       list1: [
-        { name: 'a', age: '' },
-        { name: 'b', age: '' },
-        { name: 'c', age: '' },
-        { name: 'd', age: '' },
-        { name: 'e', age: '' },
-        { name: 'f', age: '' },
-        { name: 'g', age: '' },
-        { name: 'h', age: '' },
-        { name: 'i', age: '' },
-        { name: 'j', age: '' },
-        { name: 'k', age: '' },
-        { name: 'l', age: '' },
-        { name: 'm', age: '' }
-      ]
-    }
+        { name: "a", age: "" },
+        { name: "b", age: "" },
+        { name: "c", age: "" },
+        { name: "d", age: "" },
+        { name: "e", age: "" },
+        { name: "f", age: "" },
+        { name: "g", age: "" },
+        { name: "h", age: "" },
+        { name: "i", age: "" },
+        { name: "j", age: "" },
+        { name: "k", age: "" },
+        { name: "l", age: "" },
+        { name: "m", age: "" },
+      ],
+    };
   },
   components: {
-    draggable
-  }
-}
+    draggable,
+  },
+};
 </script>
